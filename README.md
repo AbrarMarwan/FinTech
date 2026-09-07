@@ -43,6 +43,11 @@
 
 ## التشغيل
 
-شغل الخادم من مجلد backend، ثم نفذ flutter pub get وشغل تطبيق Flutter على الجهاز أو المحاكي.
-
+شغل الخادم من مجلد backend، ثم نفذ flutter pubget وشغل تطبيق Flutter على الجهاز أو المحاكي.
+ cd backend
+python -m uvicorn main:app --host 0.0.0.0 --port 8000
 تأكد من أن عنوان API في lib/services/api_service.dart يشير إلى عنوان جهاز الخادم الصحيح.
+ 
+flutter clean
+flutter pub get
+flutter run -d windows
